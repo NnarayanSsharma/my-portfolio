@@ -1,33 +1,114 @@
 .App {
   text-align: center;
+  position: relative;
+}
+.navbar{
+  width: 100%;
+  /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+  background-blend-mode: multiply,multiply;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: solid 2px #000;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+ul.nav-item{
+
+
+}
+.navbar h1{
+  text-align: left;
+  display: block;
+  padding: 0 0 0 1.2rem;
+  text-shadow: 4px 4px 10px black;
+  text-transform: uppercase;
+  color: #fefee0;
+  border: solid 0.009px black;
+}
+.navbar ul{
+  text-align: right;
+  padding: 0.8em 0 0 0;
+}
+.navbar li{
+  list-style: none;
+  display: inline;
+  margin: 0 1.1rem;
+  padding: 1.2em 0 0 0;
+  /* text-align: right; */
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+a:hover{
+  color: black;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer{
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+  background-blend-mode: multiply,multiply;
+  width: 100%;
+  border-top: solid 2px #000;
+  
+}
+.main-container{
+  position: absolute;
+  background-image: url('./components/img/artificial-flowers-blurred-background-close-up-1229861.jpg');
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 580px;
+  background-size: cover; 
+  color: aliceblue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main-container-content ul li{
+  display: inline;
+  list-style: none;
+  font-size: 30px;
+  text-align: center;
+  margin: 5em 1.2rem 0 1.2rem;
+}
+.main-container-content ul .faceBook{
+  color: blue;
+}
+.main-container-content ul{
+  left: 100px;
+  margin-top: 3rem;
+  margin-left: 0; 
+  transform: translateX(-19px);
+}
+.main-container-content button{
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+  background-blend-mode: multiply,multiply;
+  border: solid 1px #989898;
+  padding: 5px;
+  box-sizing: border-box;
+  color: #fefee0;
+  font-size: 0.9rem;
+  cursor: pointer;
+
+}
+.main-container-content button:hover{
+  transform: translateY(2px);
+  color: #333;
+  background-blend-mode: multiply,multiply;
+  border: solid 1px #989898;
+  padding: 5px;
+  box-sizing: border-box;
+  background: #fefee0;
+  font-size: 0.9rem;
+
+}
+.main-container-content h1{
+  font-size: 2.5rem;
+}
+.main-container-content h3{
+  font-size: 1.2rem;
+  margin-top: 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
